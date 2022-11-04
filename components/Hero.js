@@ -9,11 +9,12 @@ import Image from "next/image";
 import deved from "../public/one1.jpg";
 
 export default function Hero() {
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(false);
   return (
     
     <section className="min-h-screen">
-      <nav className=" sticky top-0 z-30 border-rounded   w-full py-10 mb-12 flex justify-between dark:text-white">
+      <nav className="bg-gray-800 sticky top-0 z-30  rounded" >
+        <div className= "mx-10  py-5 mb-12 flex justify-between dark:text-white">
         <h1 className="font-burtons text-xl">collins T</h1>
         <ul className="flex items-center">
           <li>
@@ -31,6 +32,7 @@ export default function Hero() {
             </a>
           </li>
         </ul>
+        </div>
       </nav>
       <div className="text-center p-10 py-10">
         <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
