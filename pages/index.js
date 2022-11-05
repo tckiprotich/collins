@@ -5,6 +5,9 @@ import Hero from '../components/Hero';
 import { useState } from "react";
 import About from '../components/About';
 import Styles from "../styles/Home.module.css"
+import Work from "../components/Work"
+import Footer from "../components/Footer"
+import Cta from "../components/Cta"
 
 
 export default function Home() {
@@ -21,6 +24,9 @@ export default function Home() {
       {/* <Nav/> */}
       <Hero/>
       <About/>
+      <Work/>
+      {/* <Footer/> */}
+      <Cta/>
       </main>
 
       
