@@ -2,27 +2,31 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillYoutube,
+  AiFillGithub,
+  AiFillDribbbleCircle
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import Image from "next/image";
 import deved from "../public/one1.jpg";
+import Link from "next/link";
 
 export default function Hero() {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState("false");
   return (
+    <div className={darkMode ? "dark" : ""}>
     
     <section className="min-h-screen">
       <nav className="  pt-5 sticky top-0 z-30  rounded" >
         <div className= "mx-10  py-5 mb-12 flex justify-between dark:text-white">
         <h1 className="font-burtons text-2xl">collins T</h1>
         <ul className="flex items-center">
-          <li>
+          {/* <li>
             <BsFillMoonStarsFill
               onClick={() => setDarkMode(!darkMode)}
               className=" cursor-pointer text-2xl"
             />
-          </li>
+          </li> */}
           <li>
             <a
               className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
@@ -42,17 +46,30 @@ export default function Hero() {
           UX designer, Developer and a musicphile
         </h3>
         <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            Data driven UX designer, #nodejs developer and a musicphile 
+            
             </p>
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-          <AiFillTwitterCircle />
+          {/* < AiFillTwitterCircle  /> */}
+          < a href="https://twitter.com/tckiprotich/">
+          < AiFillTwitterCircle  />
+
+          </a>
+          < a href="https://linkedin.com/in/collins-tonui/">
           <AiFillLinkedin />
-          <AiFillYoutube />
+
+          </a>
+          < a href="https://github.com/tckiprotich/">
+          <AiFillGithub/>
+
+          </a>
+         
+          
         </div>
         <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
           <Image src={deved} layout="fill" objectFit="cover" />
         </div>
       </div>
     </section>
+    </div>
   );
 }
