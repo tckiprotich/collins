@@ -13,9 +13,9 @@ export default function Hero() {
   return (
     
     <section className="min-h-screen">
-      <nav className="bg-gray-800 sticky top-0 z-30  rounded" >
+      <nav className="  pt-5 sticky top-0 z-30  rounded" >
         <div className= "mx-10  py-5 mb-12 flex justify-between dark:text-white">
-        <h1 className="font-burtons text-xl">collins T</h1>
+        <h1 className="font-burtons text-2xl">collins T</h1>
         <ul className="flex items-center">
           <li>
             <BsFillMoonStarsFill
