@@ -33,9 +33,9 @@ const handleSubmit = (e) => {
     
   
     return(
-        <section class="bg-white dark:bg-gray-900">
+        <section class="mx-auto bg-white dark:bg-gray-900">
     <div class="container px-6 py-12 mx-auto">
-        <div class="lg:flex lg:items-center lg:-mx-6">
+        <div class="lg:flex lg:items-center lg:-mx-auto">
             <div class="lg:w-1/2 lg:mx-6">
                 <h1 class="text-3xl font-semibold text-gray-800 capitalize dark:text-white lg:text-5xl">
                     Let's work together 
@@ -72,7 +72,7 @@ const handleSubmit = (e) => {
                 </div>
 
                 <div class="mt-6 w-80 md:mt-8">
-                    <h3 class="text-gray-600 dark:text-gray-300 ">Follow us</h3>
+                    <h3 class="text-gray-600 dark:text-gray-300 ">My socials accounts</h3>
 
                     <div class="flex mt-4 -mx-1.5 ">
                         {/* <a class="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500" href="#">
@@ -104,7 +104,7 @@ const handleSubmit = (e) => {
                 </div>
             </div>
 
-            <div class="mt-8 lg:w-1/2 lg:mx-6">
+            {/* <div class="mt-8 lg:w-1/2 lg:mx-6">
                 <div
                     class="w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
                     <h1 class="text-lg font-medium text-gray-700">What do you want to ask</h1>
@@ -130,7 +130,7 @@ const handleSubmit = (e) => {
                         </button>
                     </form>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
 </section>
