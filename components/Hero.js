@@ -17,28 +17,8 @@ export default function Hero() {
     <div className={darkMode ? "dark" : ""}>
     
     <section className="min-h-screen">
-      <nav className="  pt-5 sticky top-0 z-30  rounded" >
-        <div className= "mx-10  py-5 mb-12 flex justify-between dark:text-white">
-        <h1 className="font-burtons text-2xl">collins T</h1>
-        <ul className="flex items-center">
-          {/* <li>
-            <BsFillMoonStarsFill
-              onClick={() => setDarkMode(!darkMode)}
-              className=" cursor-pointer text-2xl"
-            />
-          </li> */}
-          <li>
-            <a
-              className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-              href="#"
-            >
-              Resume
-            </a>
-          </li>
-        </ul>
-        </div>
-      </nav>
-      <div className="text-center p-10 py-10">
+      
+      <div className="text-center p-10 pt-40">
         <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
           Collins Tonui
         </h2>

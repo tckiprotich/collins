@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-// import Nav from '../components/Nav'
+import Nav from '../components/Nav.jsx'
 import Hero from '../components/Hero';
 import { useState } from "react";
 import About from '../components/About';
@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" bg-white  dark:bg-gray-900 md:px-20 lg:px-40">
-      {/* <Nav/> */}
+     
       <Hero/>
       <About/>
       <Work/>
